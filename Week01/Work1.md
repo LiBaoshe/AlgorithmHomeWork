@@ -1,40 +1,40 @@
 #### [66. 加一](https://leetcode-cn.com/problems/plus-one/)
 
-class Solution {
+`class Solution {`
 
-  public int[] plusOne(int[] digits) {
+  `public int[] plusOne(int[] digits) {`
 
-​    int i = digits.length - 1;
+​    `int i = digits.length - 1;`
 
-​    for (; i >= 0; i--) {
+​    `for (; i >= 0; i--) {`
 
-​      if(digits[i] < 9){
+​      `if(digits[i] < 9){`
 
-​        digits[i]++;
+​        `digits[i]++;`
 
-​        break;
+​        `break;`
 
-​      } else {
+​      `} else {`
 
-​        digits[i] = 0;
+​        `digits[i] = 0;`
 
-​      }
+​      `}`
 
-​    }
+​    `}`
 
-​    if(i < 0){
+​    `if(i < 0){`
 
-​      digits = new int[digits.length + 1];
+​      `digits = new int[digits.length + 1];`
 
-​      digits[0] = 1;
+​      `digits[0] = 1;`
 
-​    }
+​    `}`
 
-​    return digits;
+​    `return digits;`
 
-  }
+  `}`
 
-}
+`}`
 
 
 
