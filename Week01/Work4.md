@@ -26,14 +26,15 @@ class Solution {
                     rowHeights[j] = matrix[i][j] == '0' ? 0 : rowHeights[j] + 1;
                 }
             }
-            // 计算以当前行为低的柱状图最大面具
+            // 计算以当前行为低的柱状图最大面积
             ans = Math.max(ans, largestRectangleArea(rowHeights));
         }
         return ans;
     }
 
-    private Deque<Rect> stack = new ArrayDeque<>();
+    private Deque<Rect> stack = new ArrayDeque<>(); // 定义单调栈
 
+    // 计算并返回柱状图中最大的矩形面积
     private int largestRectangleArea(int[] heights){
         stack.clear();
         int ans = 0;
@@ -49,6 +50,7 @@ class Solution {
         return ans;
     }
 
+    // 记录当前柱子的高度和最大宽度
     private class Rect{
         int width;
         int height;
