@@ -27,6 +27,3 @@ class Solution {
 }
 ```
 
-运行结果：
-![image-20211119154143647](C:\Users\libaoshe\AppData\Roaming\Typora\typora-user-images\image-20211119154143647.png)
-
